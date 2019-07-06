@@ -274,5 +274,6 @@ ippon/media/
 
 .ipython/
 .env
+.envrc
 .envs/*
 !.envs/.local/

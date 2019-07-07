@@ -79,7 +79,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "project.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "project.wallets.apps.WalletsConfig",
+    "project.transactions.apps.TransactionsConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

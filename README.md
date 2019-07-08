@@ -18,7 +18,7 @@ to save, to collect, to put together, to hoard
 
 # running
 
-```python
+```bash
 $ cd ~/to/the/project/directory
 
 # install the dependencies using pipenv

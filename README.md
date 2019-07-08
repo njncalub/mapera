@@ -10,6 +10,31 @@ the highest score a fighter can achieve in a Japanese martial arts ippon-wazari 
 **mag-ipon**:
 to save, to collect, to put together, to hoard
 
+# prerequisites
+
+* [Python 3.x](https://www.python.org/download/releases/3.0/)
+* [pipenv](https://github.com/pypa/pipenv)
+* [postgresql](https://www.postgresql.org/)
+
+# running
+
+```python
+$ cd ~/to/the/project/directory
+
+# install the dependencies using pipenv
+$ pipenv install
+
+# copy and edit the environment variable files
+$ cp .env.template .env
+$ cp .envrc.template .envrc
+
+# create super user account
+$ pipenv run manage.py createsuperuser
+
+# run and serve
+$ pipenv run manage.py runserver 0.0.0.0:8000
+```
+
 # contributing
 
 ***[Imposter syndrome disclaimer](https://github.com/adriennefriend/imposter-syndrome-disclaimer)***: We want your help. No, really.

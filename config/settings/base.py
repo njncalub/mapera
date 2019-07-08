@@ -263,6 +263,10 @@ ACCOUNT_ADAPTER = "project.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "project.users.adapters.SocialAccountAdapter"
 
-
-# Your stuff...
+# PROJECT SETTINGS
 # ------------------------------------------------------------------------------
+
+# We'll be using integers to save floating-point numbers (e.g. 1482.80 becomes
+# 1482000 in the database).
+# This decides how many zeroes are used as floating-point digits.
+FLOATING_ZEROES = 3

@@ -79,7 +79,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "project.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "project.wallets.apps.WalletsConfig",
+    "project.transactions.apps.TransactionsConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -262,6 +263,10 @@ ACCOUNT_ADAPTER = "project.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "project.users.adapters.SocialAccountAdapter"
 
-
-# Your stuff...
+# PROJECT SETTINGS
 # ------------------------------------------------------------------------------
+
+# We'll be using integers to save floating-point numbers (e.g. 1482.80 becomes
+# 1482000 in the database).
+# This decides how many zeroes are used as floating-point digits.
+FLOATING_ZEROES = 3

@@ -10,6 +10,13 @@ class Category(models.Model):
     """A way to categorize and group together Transactions."""
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    wallet = models.ForeignKey(
+        Wallet,
+        blank=True,
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name="categories",
+    )
     name = models.CharField(max_length=25)
     parent = models.ForeignKey(
         "self",

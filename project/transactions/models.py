@@ -5,6 +5,7 @@ from django.conf import settings
 from django.utils import timezone
 
 from project.wallets.models import Wallet
+from project.categories.models import Category
 
 
 class Transaction(models.Model):
@@ -26,7 +27,13 @@ class Transaction(models.Model):
     is_active = models.BooleanField(default=True)
     # If it is not yet committed, it should not be added in the final computation.
     is_committed = models.BooleanField(default=False)
-    # TODO(njncalub): Add categories/envelopes for the transactions.
+    category = models.ForeignKey(
+        Category,
+        blank=True,
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name="categories",
+    )
     # TODO(njncalub): Add an upload button for the receipts.
 
     # TODO(njncalub): Move this to a utilities package.

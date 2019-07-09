@@ -36,6 +36,7 @@ django-redis = "==4.10.0"
 djangorestframework = "==3.9.4"
 coreapi = "==2.3.3"
 black = "*"
+pylint-django = "==2.0.10"
 
 [requires]
 python_version = "3.7"

@@ -1,11 +1,17 @@
-# ippon
+# mapera
 
-Manage your budgets and save some money.
+Map where your money goes.
 
 # etymology
 
-**ippon**:
-the highest score a fighter can achieve in a Japanese martial arts ippon-wazari contest, usually kendo, judo, karate or jujitsu
+**map**:
+represent (an area) on a map; make a map of
+
+**pera(filipino)**:
+money, cash, etc
+
+**mapera(filipino)**:
+having a lot of money
 
 **mag-ipon**:
 to save, to collect, to put together, to hoard

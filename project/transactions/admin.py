@@ -6,14 +6,17 @@ from .models import Transaction
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
+    search_fields = ["description", "debited", "credited", "category__name"]
     list_display = (
         "get_timestamp",
         "wallet",
+        "category",
         "get_debit",
         "get_credit",
         "is_committed",
     )
     list_filter = ("on", "date_created", "is_committed", "is_active")
+    raw_id_fields = ("wallet", "created_by", "category")
 
     def get_timestamp(self, obj):
         return obj.timestamp

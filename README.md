@@ -1,5 +1,10 @@
 # mapera
 
+[![Python Version][python-version-image]][python-version-url]
+
+[python-version-image]: https://img.shields.io/badge/python-3.7-blue.svg
+[python-version-url]: https://github.com/njncalub/mapera/
+
 Map where your money goes.
 
 # etymology
@@ -7,14 +12,11 @@ Map where your money goes.
 **map**:
 represent (an area) on a map; make a map of
 
-**pera(filipino)**:
+**pera** (filipino):
 money, cash, etc
 
-**mapera(filipino)**:
+**mapera** (filipino):
 having a lot of money
-
-**mag-ipon**:
-to save, to collect, to put together, to hoard
 
 # prerequisites
 
